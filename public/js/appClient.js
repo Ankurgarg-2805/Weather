@@ -6,7 +6,7 @@ const msgTwo = document.getElementById('two');
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const location = search.value;
-    const url = `http://127.0.0.1:3000/weather?address=${location}`;
+    const url = `/weather?address=${location}`;
 
     msgOne.textContent = 'Loading Forecast...';
     msgTwo.textContent = '';
